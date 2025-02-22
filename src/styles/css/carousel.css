@@ -1,0 +1,38 @@
+.carousel {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .carousel:hover > .carousel__info {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  .carousel__info {
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.05);
+    width: 300px;
+    height: auto;
+    transform: translateY(100vh);
+    opacity: 0;
+    transition: 0.6s;
+  }
+  .carousel__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #112D4E;
+    border-bottom: 2px solid #112D4E;
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .carousel__des {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines before ellipsis */
+    -webkit-box-orient: vertical;
+  }/*# sourceMappingURL=style.css.map */

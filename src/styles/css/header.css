@@ -62,7 +62,7 @@
       font-size: 1.5rem;
       flex-direction: column;
       transition: 1s;
-      transform: translateY(-120vh);
+      transform: translateY(-500vh);
     }
   }
   .header__nav {

@@ -42,7 +42,89 @@ header{
     .main{
         margin-top: 0 !important;
     }
+    .cards{
+        background-color: #DBE2EF;
+        margin-top: 10px;
+        padding: 10px !important;
+    }
+    section h1{
+        font-size: 32px !important;
+        font-weight: 600 !important;
+        margin-bottom: 10px !important;
+        line-height: 3rem !important;
+    }
 }
 .main{
     margin-top: 85px;
+}
+.py{
+    padding: 0 80px;
+}
+.px{
+    padding: 150px 0;
+}
+
+.mt{
+    margin-top: 40px;
+}
+.mb{
+    margin-bottom: 40px;
+}
+.mr{
+    margin-right: 80px;
+}
+.ml{
+    margin-right: 80px;
+}
+.mall{
+    margin: 40px 80px;
+}
+.cards{
+    background-color: #DBE2EF;
+    margin-top: 50px;
+    padding: 50px 150px;
+}
+section h1{
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 45px;
+    line-height: 1.5rem;
+}
+.box-search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensures it sits above other elements if necessary */
+  }
+  
+  .box-search input {
+    width: 100%;
+    outline: none;
+    background: transparent;
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+  }
+  section {
+    max-width: 1170px;
+    margin: auto;
+  }
+  .box-search .lucide-search {
+    color: #6c757d;
+    font-size: 20px;
+  }
+  .popular{
+    margin-top: 50px;
+  }
+  .latest-book{
+    margin-top: 50px;
+  }
+  .latest-book h1{
+    border-bottom: 3px solid #112D4E;
+    padding-bottom:10px ;
+    width: fit-content;
 }

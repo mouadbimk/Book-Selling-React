@@ -1,0 +1,70 @@
+.items{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.item{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    width: 270px;
+    height: 200px;
+    border-radius: 10px;
+    transition: .4s ease;
+    cursor: pointer;
+    &:hover{
+        background-color: $blue;
+        color: $white;
+    }
+    @include breakpoint-down(small){
+        width: 100%;
+        height: 300px;
+    }
+
+    &__image{
+        width: 150px;
+        height: 200px;
+        border: 1px solid $blue;
+        margin: 10px;
+        transition: .5s ease;
+        @include breakpoint-down(small){
+                width: 200px;
+                height: 250px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &:hover{
+            transform: scale(1.02);
+
+        }
+    }
+    &__title{
+        font-size: 17px;
+        font-weight:600;
+    }
+    &__category{
+        font-size: 14px;
+        background-color: $darkBlue;
+        width: fit-content;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+    &__rate{
+        color:$gold;
+        font-size: 24px;
+    }
+    &__price{
+        font-size: 10px;
+        & b{
+            margin-right: 2px;
+            color: green;
+            font-size: 18px;
+        }
+    }
+}

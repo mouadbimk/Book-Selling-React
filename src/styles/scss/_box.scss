@@ -1,0 +1,50 @@
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint-down(medium){
+        flex-wrap: wrap;
+    }
+}
+.box{
+    display: flex;
+    align-items: center;
+
+    @include breakpoint-down(small){
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    &__img{
+     height: 100%;
+     width: 190px;
+     border-radius: 5px;
+       padding: 10px;
+       max-width: 50%;
+       margin: 10px;
+       @include breakpoint-down(small){
+        width: 300px;
+    }
+       & svg{
+        margin: auto;
+       }
+    }
+    &__info{
+        max-width: 50%;
+        margin: 5px;
+    }
+    &__title{
+        font-size: 16px;
+        font-weight: 600;
+        color: $blue;
+        h2{
+            word-break:break-all;
+        }
+    }
+    &__des{
+        font-size: 15px;
+        p{
+            color: hsl(var(--ring) / 0.5)
+        }
+    }
+}

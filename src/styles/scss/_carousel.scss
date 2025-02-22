@@ -1,0 +1,40 @@
+.carousel{
+    position: relative;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    &:hover > &__info{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    &__info{
+        padding: 10px;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+        background: rgb(0, 0,0,0.05);
+        width: 300px;
+        height: auto;
+        transform: translateY(100vh);
+        opacity: 0;
+        transition: .6s;
+    }
+    &__title{
+        font-size: 20px;
+        font-weight: 700;
+        color: $darkBlue;
+        border-bottom: 2px solid $darkBlue;
+        width: 100%;
+        margin-bottom: 5px;
+      
+    }
+    &__des {
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Number of lines before ellipsis */
+    -webkit-box-orient: vertical;
+}
+}
