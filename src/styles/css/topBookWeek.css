@@ -1,0 +1,10 @@
+.title{
+    max-width: 1200px;
+    padding: 50px 100px 20px 100px;
+}
+.title h1{
+    font-size: 27px;
+    font-weight: 600;
+    border-bottom: 2px solid #000;
+    width: fit-content;
+}

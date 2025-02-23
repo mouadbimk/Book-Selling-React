@@ -11,8 +11,6 @@ const Items = ()=>{
                 <Card/>
                 <Card/>
                 <Card/>
-                <Card/>
-                <Card/>
                 </div>
     </>
 }

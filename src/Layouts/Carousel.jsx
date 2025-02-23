@@ -2,14 +2,13 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '@/styles//css/carousel.css'
-const Carousel = () => {
-  const imageCount = 10;
+const Carousel = ({slides}) => {
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 6,
+    slidesToScroll: 6,
     initialSlide: 0,
     responsive: [
       {
@@ -41,28 +40,18 @@ const Carousel = () => {
 
   return (
     <div className="carousel-container">
-      <Slider {...settings}>
-      <div style={{ margin: '10px', padding: '10px' }} className='carousel'>
-            <img
-              src='https://placehold.co/300x400?text=Slide+19'
-              alt='Slider'
-              className='carousel__img'/>
-            <div className='carousel__info'>
-              <h1 className='carousel__title'>Example Title Book</h1>
-              <p className='carousel__des'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore voluptates tempora vitae necessitatibus quo. Eum, consequuntur vitae neque consectetur, animi, suscipit perferendis optio doloremque similique a harum. Quisquam enim sed consectetur. Doloremque temporibus fuga laboriosam perferendis cupiditate, magnam fugit voluptates nostrum et ea sed reiciendis quidem error amet assumenda id omnis. Quisquam ducimus, consectetur reiciendis nulla in distinctio fuga quidem. Incidunt animi ex nesciunt harum eaque quis laborum iure, dignissimos autem similique consequuntur ea saepe et laboriosam repellat quas id, totam veniam facere aliquid. Vero soluta alias rerum consequuntur quae aliquid voluptatum porro ipsam, delectus facere, placeat debitis molestiae.</p>
-            </div>
-          </div>
-        {Array.from({ length: imageCount }).map((_, index) => (
+        <Slider {...settings}>
+        {slides.map((slide, index) => (
           <div key={index} style={{ margin: '10px', padding: '10px' }} className='carousel'>
-            <img
-              src={`https://placehold.co/300x400?text=Slide+${index + 1}`}
-              alt={`Slider ${index + 1}`}
-              className='carousel__img'/>
-            <div className='carousel__info'>
-              <h1 className='carousel__title'>Example Title Book</h1>
-              <p className='carousel__des'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, in?</p>
-            </div>
+          <img
+            src={slide.imageSrc}
+            alt={slide.altText}
+            className='carousel__img'/>
+          <div className='carousel__info'>
+            <h1 className='carousel__title'>{slide.title}</h1>
+                  <p className='carousel__des'>{slide.description}</p>
           </div>
+        </div>
         ))}
       </Slider>
     </div>

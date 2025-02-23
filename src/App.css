@@ -54,6 +54,24 @@ header{
         line-height: 3rem !important;
     }
 }
+@media only screen and (max-width:450px){
+    .slide-content{
+        flex-direction: column;
+        padding: 20px !important;
+    }
+    .slide-content h1{
+        width: 100% !important;
+        margin-bottom: 40px;
+    }
+    .slider-company img{
+        width: 375px !important;
+        height: 200px !important;
+        object-fit: contain;
+    }
+    .sellCall{
+        padding: 20px !important;
+    }
+}
 .main{
     margin-top: 85px;
 }
@@ -84,7 +102,7 @@ header{
     margin-top: 50px;
     padding: 50px 150px;
 }
-section h1{
+section h1,.cards h1{
     font-size: 36px;
     font-weight: 800;
     margin-bottom: 45px;
@@ -127,4 +145,36 @@ section h1{
     border-bottom: 3px solid #112D4E;
     padding-bottom:10px ;
     width: fit-content;
+}
+.slide-content h1 {
+    font-size: 25px;
+    width: 20%;
+    font-weight: 500;
+    position: relative;
+}
+.slide-content h1::before {
+    content:"";
+    width: 50%;
+    background-color: #112D4E;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    position: absolute;
+    transition: .5s;
+}
+.slide-content h1:hover::before {
+    width: 90%;
+}
+
+.slide-content{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 80px 100px;
+
+}
+.slider-company img{
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
 }

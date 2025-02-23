@@ -1,0 +1,72 @@
+.newsletterBanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $darkBlue;
+    width: 100%;
+    color: $white;
+    padding: 50px 100px;
+    background-image: url('../../assets/b14.png');
+    background-position: center right;
+    background-repeat: no-repeat;
+    @include breakpoint-down(small){
+        flex-direction: column;
+        padding: 40px 10px;
+        text-align: center;
+    }
+    &__title{
+        font-size: 26px;
+        font-weight: 600;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        @include breakpoint-down(small){
+            margin-bottom: 20px;
+        }
+    }
+    &__para{
+        font-size: 15px;
+        color: #8f8f8f;
+        span{
+            color: gold;
+        }
+     
+    }
+    &__form{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include breakpoint-down(small){
+            margin-top: 30px;
+        }
+    }
+    &__btn{
+        background-color: $blue;
+        color: $white;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 14px 30px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: #fff;
+            color: $blue;
+            transition: .3s;
+        }
+    }
+    &__input{
+        width: 450px;
+        height: 3.25rem;
+        padding: 0 1.25rem;
+        border: 1px solid transparent;
+        outline: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-size: 14px;
+        color: $darkBlue;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,42 @@
+.sellCall {
+    padding: 80px 100px;
+    background-color: #112D4E;
+  }
+  .sellCall__content {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .sellCall__title {
+    font-size: 40px;
+    color: #F9F7F7;
+    font-weight: 700;
+  }
+  .sellCall__title:hover {
+    transform: scale(1.02);
+    transition: transform 0.4s ease-in-out;
+  }
+  .sellCall__para {
+    font-size: 16px;
+    color: #cecccc;
+    line-height: 1.7;
+  }
+  .sellCall__btn {
+    display: flex;
+    background-color: #3F72AF;
+    width: -moz-fit-content;
+    width: fit-content;
+    padding: 10px 15px;
+    margin: 14px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+  }
+  .sellCall__btn svg {
+    margin-right: 5px;
+  }
+  .sellCall__btn:hover {
+    background-color: #DBE2EF;
+    color: #3F72AF;
+    transition: 0.3s;
+    border-radius: 10px;
+  }/*# sourceMappingURL=style.css.map */
