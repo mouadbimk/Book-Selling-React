@@ -18,3 +18,7 @@ If you encounter any issues or would like to suggest improvements, feel free to 
 
 ## Home Page
 ![Home Page](./images/Home.png)
+
+
+## Book Detail
+![Book Detail](./images/bookDetails.png)
