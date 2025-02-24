@@ -1,6 +1,7 @@
 html{
     font-size: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 *,*::before{
     box-sizing: inherit;
@@ -26,10 +27,9 @@ header{
     position: fixed;
     z-index: 1000;
     top: 0;
-    height: 100px;
+    height: 80px;
     background-color: #DBE2EF;
     width: 100%;
-    margin-bottom: 100px;
 }
 @media only screen and (max-width:1024px){
     header{
@@ -73,7 +73,7 @@ header{
     }
 }
 .main{
-    margin-top: 85px;
+    margin-top: 80px;
 }
 .py{
     padding: 0 80px;

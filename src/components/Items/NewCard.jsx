@@ -1,7 +1,8 @@
 import '@/styles/css/card.css';
+import { Link } from 'react-router';
 const NewCard = ({title,category,price,image})=>{
     return <>
-    <div className="card">
+    <Link to={'/book/1'} className="card">
                         <div className="card__image">
                             <img src={image} alt="book image" />
                         </div>
@@ -25,7 +26,7 @@ const NewCard = ({title,category,price,image})=>{
                                 <span><b>{price}$</b>(USD)</span>
                             </div>
                         </div>
-                    </div>
+                    </Link>
     </>
 }
 export default NewCard;

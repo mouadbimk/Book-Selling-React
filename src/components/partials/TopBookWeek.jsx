@@ -38,7 +38,7 @@ const TopBookWeek = ()=>{
         <div className="title">
             <h1>Most Read Books This Week</h1>
         </div>
-            <Carousel slides={topBookWeek}/>
+            <Carousel slides={topBookWeek} items={5}/>
         </div>
     </>
 }

@@ -1,13 +1,15 @@
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import '@/styles//css/carousel.css'
-const Carousel = ({slides}) => {
+import '@/styles/css/carousel.css'
+const Carousel = ({slides = [],items = 6,Pagination = true,Autoplay = false}) => {
   var settings = {
-    dots: true,
+    dots: Pagination,
     infinite: true,
+    autoplay: Autoplay,
     speed: 500,
-    slidesToShow: 6,
+    autoplaySpeed: 2000,
+    slidesToShow:  items,
     slidesToScroll: 6,
     initialSlide: 0,
     responsive: [

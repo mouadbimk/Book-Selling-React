@@ -8,8 +8,8 @@ import BannerNewsLetter from "../components/Banners/BannerNewsLetter";
 import {Button} from '@/components/ui/button.tsx'
 import BannerPartenaire from "../components/Banners/BannerPartenaire";
 import SellCall from '@/Layouts/SellCall';
-import Footer from "../Layouts/Footer";
 import TopBookWeek from "../components/partials/TopBookWeek";
+import { Link } from "react-router";
 export default function Home() {
     const slidesHome = [
         {
@@ -52,7 +52,7 @@ export default function Home() {
    
     return (
         <>
-        <Carousel slides={slidesHome}/>
+        <Carousel slides={slidesHome} items={6}/>
             <Boxes />
             {/* search box */}
             <div className="mx-auto container">
@@ -97,9 +97,6 @@ export default function Home() {
             <h1>Our Partner</h1>
         <BannerPartenaire className='slide-company' />
         </div>
-     
-      
-        <Footer/>
-        </>
+            </>
     );
 }
