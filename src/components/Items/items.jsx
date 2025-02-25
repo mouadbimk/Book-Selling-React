@@ -12,6 +12,7 @@ const Items = ()=>{
                 <Card/>
                 <Card/>
                 </div>
+                
     </>
 }
 export default Items;

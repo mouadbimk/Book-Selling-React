@@ -9,5 +9,8 @@ export default defineConfig({
     alias: {
       '@' :path.resolve(__dirname, './src'),
     }
-  }
+  },
+  server:{
+    allowedHosts: ["0533-45-219-102-237.ngrok-free.app"],
+  },
 })

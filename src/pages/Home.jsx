@@ -1,15 +1,14 @@
 import { ArrowRightFromLine, Search } from "lucide-react";
 import Boxes from "../components/partials/Boxes";
-import Carousel from "../Layouts/Carousel";
+import Carousel from "../components/partials/Carousel";
 import '@/styles/scss/style.css';
 import Items from "../components/Items/items";
 import NewCard from "../components/Items/NewCard";
 import BannerNewsLetter from "../components/Banners/BannerNewsLetter";
 import {Button} from '@/components/ui/button.tsx'
 import BannerPartenaire from "../components/Banners/BannerPartenaire";
-import SellCall from '@/Layouts/SellCall';
 import TopBookWeek from "../components/partials/TopBookWeek";
-import { Link } from "react-router";
+import SellCall from "../components/partials/SellCall";
 export default function Home() {
     const slidesHome = [
         {
@@ -52,7 +51,7 @@ export default function Home() {
    
     return (
         <>
-        <Carousel slides={slidesHome} items={6}/>
+        <Carousel slides={slidesHome} items={5}/>
             <Boxes />
             {/* search box */}
             <div className="mx-auto container">

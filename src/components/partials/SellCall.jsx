@@ -11,4 +11,4 @@ const SellCall = ()=>{
         </div>
         </>
 }
-export default SellCall
+export default SellCall;

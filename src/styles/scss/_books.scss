@@ -1,0 +1,102 @@
+.books{
+    &__head{
+        height: 150px;
+        width: 100%;
+        background-image: url(../../assets/banner.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        color: $white;
+        justify-content: space-between;
+        padding: 50px 100px;
+        h1{
+            font-size: 32px;
+            font-weight: 600;
+        }
+        @include breakpoint-down(small){
+            flex-direction: column;
+            padding:20px;
+            text-align: center;
+        }
+        
+    }
+    &__links{
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        a{
+            display: flex;
+            gap: .4rem;
+            svg{
+                color: $blue;
+            }
+        }
+        span{
+            color: rgb(201, 194, 194);
+            display: flex;
+            align-items: center;
+            gap: .2rem;
+        }
+    }
+    &__content{
+        max-width: 1200px;
+        margin: auto;
+    }
+    &__title{
+        h2{
+            font-size: 29px;
+            margin-top: 20px;
+            font-weight: 600;
+            border-bottom: 2px solid $darkBlue;
+            width: fit-content;
+            margin: 20px 40px;
+        }
+        @include breakpoint-down(small){
+            flex-direction: column;
+            padding:20px;
+            text-align: center;
+        }
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+       justify-content: center;
+       padding: 20px 0;
+       margin: 20px 0;
+    }
+    &__pagination{
+        span{
+            padding: 10px 15px;
+            background-color: $blueWhite;
+            margin: 10px 5px;
+            border-radius: 5px;
+            font-size: 17px;
+            font-weight: 500;
+            color: $darkBlue;
+        }
+        cursor: pointer;
+        text-transform: capitalize;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
+.categories{
+    &__title{
+        display: flex;
+        align-items: center;
+       justify-content: start;
+       gap: 1.5rem;
+       h2{
+        margin-top: 45px;
+        font-size: 24px;
+        font-weight: 600;
+        margin-left: 30px;
+       }
+    }
+}

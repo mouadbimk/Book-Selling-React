@@ -1,7 +1,7 @@
 import { ArrowBigDown, ArrowBigUp, ArrowRightCircleIcon, Home } from "lucide-react";
 import { Link } from "react-router";
 import '@/styles/css/BookDetails.css';
-import Carousel from "../Layouts/Carousel";
+import Carousel from "../components/partials/Carousel";
 const BookDetails = () =>{
     const sideBarCarousel  = [
         {

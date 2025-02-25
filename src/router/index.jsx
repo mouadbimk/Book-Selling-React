@@ -4,6 +4,9 @@ import NotFound from '../pages/404';
 import Login from '../pages/Login';
 import Layout from '../Layouts/layout';
 import BookDetails from '../pages/BookDetails';
+import Books from '../pages/Books';
+import Categories from '../pages/Categories';
+import About from '../pages/About';
 export const router = createBrowserRouter([
     {
         element:<Layout/>,
@@ -18,9 +21,16 @@ export const router = createBrowserRouter([
         },
         {
             path:'/books',
-            element: "Books Pages"
+            element: <Books/>
         },
-        
+        {
+            path:'/category/audio-book',
+            element: <Categories/>
+        },
+        {
+            path:'/about',
+            element: <About/>
+        },    
 
         ]
     },
