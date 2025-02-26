@@ -7,6 +7,9 @@ import BookDetails from '../pages/BookDetails';
 import Books from '../pages/Books';
 import Categories from '../pages/Categories';
 import About from '../pages/About';
+import ContactPage from '../pages/ContactPage';
+import Account from '../pages/Account';
+import AccountSettings from '../components/Account/AccountSettings';
 export const router = createBrowserRouter([
     {
         element:<Layout/>,
@@ -31,7 +34,20 @@ export const router = createBrowserRouter([
             path:'/about',
             element: <About/>
         },    
+        {
+            path: '/contact',
+            element: <ContactPage/>
+        },
+        {
+            element: <Account/>,
+            children:[
+                {
+                    path:'/account/setting',
+                    element: <AccountSettings/>
 
+                }
+            ]
+        },
         ]
     },
 

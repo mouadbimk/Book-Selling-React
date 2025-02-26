@@ -1,0 +1,35 @@
+.accountPage{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__sideBar{
+        width: 20%;
+    }
+    &__content{
+        width: 80%;
+    }
+    &__SideBar{
+        background-color: $darkBlue;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            padding: 15px 0;
+            background-color: $blueWhite;
+            color:#011C2B;
+            font-size: 18px;
+            font-weight: 600;
+            width: 100%;
+            margin: 10px auto;
+            border-top-right-radius:10px ;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+}
