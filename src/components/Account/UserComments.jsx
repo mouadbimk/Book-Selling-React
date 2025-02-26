@@ -1,8 +1,8 @@
 
 const UserComments = () => {
     return (
-        <div>
-            
+        <div className="accountPage__comments">
+            Page Comment
         </div>
     );
 }

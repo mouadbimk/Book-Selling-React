@@ -10,6 +10,9 @@ import About from '../pages/About';
 import ContactPage from '../pages/ContactPage';
 import Account from '../pages/Account';
 import AccountSettings from '../components/Account/AccountSettings';
+import UserBooks from '../components/Account/UserBooks';
+import UserComments from '../components/Account/UserComments';
+import UserCommands from '../components/Account/UserCommands';
 export const router = createBrowserRouter([
     {
         element:<Layout/>,
@@ -45,7 +48,19 @@ export const router = createBrowserRouter([
                     path:'/account/setting',
                     element: <AccountSettings/>
 
-                }
+                },
+                {
+                    path:'/account/books',
+                    element:<UserBooks/>
+                },
+                {
+                    path: '/account/comments',
+                    element:<UserComments/>
+                },
+                {
+                    path: '/account/commands',
+                    element:<UserCommands/>
+                },
             ]
         },
         ]
