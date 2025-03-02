@@ -9,7 +9,10 @@ import {Button} from '@/components/ui/button.tsx'
 import BannerPartenaire from "../components/Banners/BannerPartenaire";
 import TopBookWeek from "../components/partials/TopBookWeek";
 import SellCall from "../components/partials/SellCall";
+import { useEffect } from "react";
+import { useUserContext } from "../context/UserContext";
 export default function Home() {
+    const {user,authenticated} = useUserContext();
     const slidesHome = [
         {
         imageSrc:'http://bookoe.millionscourse.com/images/677d3d17a781d22.png',
@@ -48,7 +51,9 @@ export default function Home() {
             description:'A magical tale of a young girl who stumbles into a forest where the trees whisper ancient secrets. With the help of a talking fox, she must unravel the mystery of the fading woods A gripping historical fiction about two families intertwined by love and betrayal during World War II, and the hidden diaries that reveal their untold stories.'
         },
     ];
-   
+   useEffect(()=>{
+        console.log(user,authenticated)
+   },[]);
     return (
         <>
         <Carousel slides={slidesHome} items={5}/>
