@@ -14,9 +14,10 @@ export const UserStateContext = createContext({
 //context provider component
 export default function UserContext({children}){
     const [user,setUser] = useState(null);
-    const [authenticated , _setAuthenticated] = useState(false);
+    const [authenticated , _setAuthenticated] = useState('true' === window.localStorage.getItem('AUTHENTICATED'));
     const login = async (email,password)=>{
         return UserApi.login(email,password);
+        
     }
     const logout = async () => {
         try{

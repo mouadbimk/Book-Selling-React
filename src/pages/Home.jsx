@@ -50,9 +50,6 @@ export default function Home() {
             description:'A magical tale of a young girl who stumbles into a forest where the trees whisper ancient secrets. With the help of a talking fox, she must unravel the mystery of the fading woods A gripping historical fiction about two families intertwined by love and betrayal during World War II, and the hidden diaries that reveal their untold stories.'
         },
     ];
-   useEffect(()=>{
-        console.log(user,authenticated)
-   },[]);
     return (
         <>
         <Carousel slides={slidesHome} items={5}/>

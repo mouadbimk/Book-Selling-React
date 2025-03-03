@@ -17,7 +17,6 @@ export default function Login(){
     const onSubmit = async (values)=>{
         try{
             await login(values.email,values.password).then(({status,data})=>{
-                console.log(data)
               if(status === 200){
                 setToken(data.token);
                 setAuthenticated(true)
