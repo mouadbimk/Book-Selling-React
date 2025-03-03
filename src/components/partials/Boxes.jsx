@@ -1,4 +1,3 @@
-import '@/styles/css/boxes.css'
 const Boxes = ()=>{
     return <>
      <div className="cards">

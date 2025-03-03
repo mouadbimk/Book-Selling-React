@@ -3,6 +3,7 @@
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+    min-height: 100vh;
     &__sideBar{
         width: 20%;
     }

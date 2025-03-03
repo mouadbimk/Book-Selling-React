@@ -1,5 +1,3 @@
-import '@/styles/css/BannerNewsLetter.css';
-
 const BannerNewsLetter = ()=>{
     return <div className="newsletterBanner">
     <div className="newsletterBanner__content">

@@ -14,15 +14,24 @@ export const UserStateContext = createContext({
 //context provider component
 export default function UserContext({children}){
     const [user,setUser] = useState(null);
-    const [authenticated , _setAuthenticated] = useState('true'=== window.localStorage.getItem('AUTHENTICATED'));
+    const [authenticated , _setAuthenticated] = useState(false);
     const login = async (email,password)=>{
         return UserApi.login(email,password);
     }
-    const logout = () => {
-        setUser(null);
-        setAuthenticated(false);
-        window.localStorage.removeItem('AUTHENTICATED');
-        window.localStorage.removeItem('token');
+    const logout = async () => {
+        try{
+            await UserApi.logout();
+
+            //clear Logout Api
+            setUser(null);
+            _setAuthenticated(false);
+            window.localStorage.removeItem('AUTHENTICATED');
+            window.localStorage.removeItem('token');
+
+        }catch(error){
+            console.log(error);
+            throw error;
+        }
     }
     const setAuthenticated = (isAuthenticated) =>{
         _setAuthenticated(isAuthenticated);
@@ -31,6 +40,7 @@ export default function UserContext({children}){
     const setToken = (token)=>{
         window.localStorage.setItem('token',token);
     }
+  
     return (
     <UserStateContext.Provider value={{ 
         user,

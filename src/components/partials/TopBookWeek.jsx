@@ -1,5 +1,4 @@
 import Carousel from "./Carousel";
-import '@/styles/css/topBookWeek.css'
 const TopBookWeek = ()=>{
     const topBookWeek = [
         {

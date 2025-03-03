@@ -13,14 +13,24 @@ import AccountSettings from '../components/Account/AccountSettings';
 import UserBooks from '../components/Account/UserBooks';
 import UserComments from '../components/Account/UserComments';
 import UserCommands from '../components/Account/UserCommands';
+import GuestLayout from '../Layouts/GuestLayout';
+import AdminLayout from '../Layouts/AdminLayout';
+import Admin from '../pages/Admin';
+import AdminDashboardSetting from '../components/Admin/AdminDashboardSetting';
+import AdminDashboardBooks from '../components/Admin/AdminDashboardBooks';
+import AdminDashboardComments from '../components/Admin/AdminDashboardComments';
 export const router = createBrowserRouter([
     {
         element:<Layout/>,
         children:[
-        {
+            {
                 path : '/',
                 element: <Home />   
         },
+            {
+                path:'/books',
+                element: <Books/>
+            },
         {
             path: '/book/1',
             element: <BookDetails />
@@ -65,7 +75,14 @@ export const router = createBrowserRouter([
         },
         ]
     },
-
+    {
+        element: <GuestLayout />,
+        children:[
+            
+            
+            
+        ],
+    },
     {
         path: '*',
         element: <NotFound />
@@ -74,5 +91,26 @@ export const router = createBrowserRouter([
         path: '/login',
         element: <Login/>
     },
+    {
+        element: <AdminLayout/>,
+        children:[
+            {
+                path: '/admin/dashboard',
+                element: <Admin/>
+            },
+            {
+                path: '/admin/setting',
+                element: <AdminDashboardSetting/>
+            },
+            {
+                path: '/admin/books',
+                element: <AdminDashboardBooks/>
+            },
+            {
+                path: '/admin/comments',
+                element: <AdminDashboardComments/>
+            },
+        ]
+    }
   
 ])

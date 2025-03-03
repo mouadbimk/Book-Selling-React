@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import '@/styles/scss/style.css';
 import {AlignJustify, X} from 'lucide-react';
 import {useRef} from "react";
 import ButtonLogins from "../Login/ButtonLogins";

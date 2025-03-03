@@ -1,4 +1,3 @@
-import '@/styles/css/Footer.css'
 import { FacebookIcon, Github, Instagram, Mail, X, Youtube } from 'lucide-react';
 const Footer = ()=>{
     const date = new Date().getFullYear();

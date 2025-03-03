@@ -1,7 +1,6 @@
 import { ArrowRightFromLine, Search } from "lucide-react";
 import Boxes from "../components/partials/Boxes";
 import Carousel from "../components/partials/Carousel";
-import '@/styles/scss/style.css';
 import Items from "../components/Items/items";
 import NewCard from "../components/Items/NewCard";
 import BannerNewsLetter from "../components/Banners/BannerNewsLetter";

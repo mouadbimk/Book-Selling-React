@@ -8,7 +8,7 @@ const UserApi = {
         return await axiosClient.get('api/profile');
     },
     logout: async()=>{
-        return await axiosClient.post('logout');
+        return await axiosClient.post('/logout');
     }
 }
 export default UserApi;

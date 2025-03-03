@@ -1,5 +1,4 @@
 import { Link } from "react-router";
-import '@/styles/css/header.css';
 import { AlignJustify, X } from "lucide-react";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button"

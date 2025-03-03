@@ -1,5 +1,5 @@
-import '@/styles/css/card.css';
 import { Link } from 'react-router';
+import '@/styles/css/card.css';
 const NewCard = ({title,category,price,image})=>{
     return <>
     <Link to={'/book/1'} className="card">

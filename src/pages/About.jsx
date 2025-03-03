@@ -1,4 +1,3 @@
-import "@/styles/scss/style.css";
 const About = ()=>{
     return <>
     <div className="about">

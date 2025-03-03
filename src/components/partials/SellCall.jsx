@@ -1,4 +1,3 @@
-import '@/styles/css/sellCall.css'
 import { Book } from 'lucide-react'
 const SellCall = ()=>{
     return <>

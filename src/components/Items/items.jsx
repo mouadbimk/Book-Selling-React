@@ -1,4 +1,3 @@
-import '@/styles/css/items.css'
 import Card from './Card';
 const Items = ()=>{
     return <>

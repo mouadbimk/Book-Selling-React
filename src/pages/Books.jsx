@@ -2,7 +2,6 @@ import { ArrowRightFromLineIcon, Home, Search } from "lucide-react";
 import { Link } from "react-router";
 import Card from "../components/Items/Card";
 import SellCall from "../components/partials/SellCall";
-import '@/styles/scss/style.css'
 const Books = ()=>{
     return<>
    

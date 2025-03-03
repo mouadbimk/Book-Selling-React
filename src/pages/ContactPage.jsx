@@ -1,6 +1,5 @@
 import { CheckCircle, Circle, Facebook, Instagram, Mail, MapPin, Phone, TwitterIcon } from "lucide-react";
 import { Link } from "react-router";
-import '@/styles/scss/style.css'
 import { useState } from "react";
 const ContactPage = ()=>{
     const [selectedOption,setSelectedOption] = useState("");
